@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<title>Reigster</title>
+		<script>
+			function check()
+			{
+				var password=form1.password.value;
+				var repassword=form1.repassword.value;
+				
+				if(password==repassword)
+				{
+					alert("注册成功!");
+					return true;
+				}
+				else{
+					alert("密码输入不一致!");
+					document.getElementsByName("form1")[0].reset();
+					return false;
+				}
+			}
+		</script>
+		<style type="text/css">
+
+			body{
+				background-color:#272727;
+			}
+		
+			#div1{
+				width:800px;
+				height:600px;
+				margin:30px auto;
+				position:relative;
+				background-image: url(http://127.0.0.1/bg07.jpg);
+				background-repeat:no-repeat;
+			}
+			table{
+				width:315px;
+				height:218px;
+				margin:50px auto;
+				background-image:url(http://127.0.0.1/bg06.jpg);
+				position:relative;
+				top:240px;
+			}
+			#one{
+				width:220px;
+				height:30px;
+				position:relative;
+				left:55px;
+				top:-5px;
+				line-height:30px;
+				font-size:20px;
+			}
+			#two{
+				width:220px;
+				height:30px;
+				position:relative;
+				left:55px;
+				top:-7px;
+				line-height:30px;
+				font-size:20px;
+			}
+			#three{
+				width:220px;
+				height:30px;
+				position:relative;
+				left:55px;
+				top:-7px;
+				line-height:30px;
+				font-size:20px;
+			}
+	
+			#four{
+				width:130px;
+				height:25px;
+				position:relative;
+				left:8px;
+				top:-7px;
+			}
+			#four:hover{
+				background-color:#036B12;
+			}
+			#five{
+				width:130px;
+				height:25px;
+				position:relative;
+				left:20px;
+				top:-7px;
+			}
+			#five:hover{
+				background-color:#036B12;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<form action="loginResult.html" method="post" name="form1">
+			<div id="div1">
+				<table>
+					<tr>
+						<td colspan="2"><input id="one" type="text" name="username"></td>
+					</tr>	
+					<tr>
+						<td colspan="2"><input id="two" type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input id="three" type="password" name="repassword"></td>
+					</tr>
+					<tr>
+						<td><input id="four" type="submit" value="register" onclick="return check();"></td><td><input id="five" type="reset" value="reset"></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

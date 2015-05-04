@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<title>Login success</title>
+		
+		<style type="text/css">
+			body{
+				background-color:#272727;
+			}
+			#one{
+				width:800px;
+				height:600px;
+				margin:50px auto;	
+				background-image: url(http://127.0.0.1/bg09.jpg);
+			}
+			span{
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:20px;
+			}
+			#two{
+				width:400px;
+				height:300px;
+				margin:20px auto;
+				position:relative;
+				top:250px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="one">
+			<div id="two">
+				<center>
+				<span>您已经成功登陆</span><br>
+				<form action="http://127.0.0.1" method="post">
+					<input type="hidden" name="logout" value="true">
+					<input type="submit" value="注销">
+				</form>
+				</center>
+			</div>
+		</div>
+	</body>
+</html>

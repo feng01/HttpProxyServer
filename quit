@@ -1,0 +1,7 @@
+#!/bin/sh
+
+file=`cat ./config/parentPid`
+
+kill -TERM $file && echo Terminal $file success
+
+exit 0
